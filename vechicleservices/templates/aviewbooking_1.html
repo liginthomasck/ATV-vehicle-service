@@ -1,0 +1,61 @@
+{% include 'adminhead.html' %}
+        <br/><br/>
+        <div id="content">
+            <div id="main">
+                <center>
+        <form action="/aviewbooking_1/">
+             <table style="font-family: Palatino Linotype;font-size: 14px;color: black">
+                <tr>
+                    <td>Select Date</td>
+                    <td><input type="date" name="t1"/></td>
+                    <td><input type="submit" value="SEARCH"/></td>
+                </tr>
+            </table>
+        </form>
+        
+        <br/> <br/>
+         <br/>
+        
+      
+        <table border="2"style="font-family: Palatino Linotype;font-size: 14px;color: black">
+            <tr>
+                <th>Booking Date</th>
+                 <th>Service Type</th>
+                 <th>Vehicle No</th>
+                 <th>Vehicle Model</th>
+                 <th>Manufacture Year</th>
+                 <th>Manufacture Company</th>
+                 <th>Complaint</th>
+                 <th>Work Status</th>
+                 <th>Payment Status</th>
+            </tr>
+           {% for i in list %}
+            <tr>
+                <td>{{i.dte}}</td>
+                <td>{{i.stype}}</td>
+                <td>{{i.vno}}</td>
+                <td>{{i.vmodel}}</td>
+                <td>{{i.yr}}</td>
+                <td>{{i.cmp}}</td>
+                <td>{{i.cmplnt}}</td>
+                <td>{{i.st}}</td>
+                <td>{{i.sta}}</td>
+               
+                                           {% endfor %}</tr>
+        </table>
+        </center>
+
+
+            </div>
+
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        </div>
+        <div id="footer">
+            <p id="legal">Copyright &copy; 2017 Vehicle Service Center. All Rights Reserved. Designed by</p>
+
+        </div>
+    </body>
+</html>
+    
+      
