@@ -1,0 +1,41 @@
+<?php
+include("DatabaseCon.php");
+$db=new DatabaseCon;
+if(isset($_POST['submit']))
+{
+	$name=$_FILES['file']['name'];
+$tmpname=$_FILES['file']['tmp_name'];
+	if(isset($name))
+	{
+		if(!empty($name))
+		{
+			$location='uploads/';
+			echo"file is".$name;
+			if(move_uploaded_file($tmpname,$location.$name))
+			{
+				
+$mno=$_POST["t1"];
+$mname=$_POST["t2"];
+$col=$_POST["t3"];
+$scap=$_POST["t4"];
+$fea=$_POST["t5"];
+$mil=$_POST["t6"];
+$amt=$_POST['t9'];
+
+
+$qry="insert into vehicle(mno,mname,color,scap,fea,mil,amt,img,status) values('$mno','$mname','$col','$scap','$fea','$mil','$amt','$name','available')";
+
+	$db->insertQuery($qry);
+	echo $qry;
+			}
+			//echo"file uploaded successfully";
+				// header('location:addstudent.php');
+
+		}
+	}
+	}
+
+		
+	 
+	 header('location:addvehicle.php');
+?>
