@@ -1,0 +1,109 @@
+{% include 'ahead.html' %}
+    <!-- END nav -->
+    
+    <div class="hero-wrap ftco-degree-bg" style="background-image: url('/static/images/c1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
+          <div class="col-lg-8 ftco-animate">
+          	<div class="text w-100 text-center mb-md-5 pb-md-5">
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <h1 align="center">ADD VEHICLE</h1>
+           
+			  <form  enctype="multipart/form-data" action="/vehaction/" method="post"  onsubmit="return check();" >{% csrf_token %}
+            <table align="center" style="background-color:#FFF">
+            <tr><td>Model No</td><td><input type="text" name="mno" class="btn btn-outline-secondary"></td></tr>
+            <tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr><td>Model Name</td><td><input type="text" name="t2" class="btn btn-outline-secondary"></td></tr>
+                        <tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
+
+            <tr><td>Colour</td><td><input type="text" name="t3" class="btn btn-outline-secondary"></td></tr>
+                        <tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
+
+            <tr><td>Seating Capacity</td><td><input type="text" name="t4" class="btn btn-outline-secondary"></td></tr>
+                        <tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
+
+            <tr><td>Features</td><td><input type="text" name="t5" class="btn btn-outline-secondary"></td></tr>
+                        <tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
+
+            <tr><td>Milage</td><td><input type="text" name="t6" class="btn btn-outline-secondary"></td></tr>
+                        <tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr><td>Amount</td><td><input type="text" name="t9" class="btn btn-outline-secondary"></td></tr>
+                        <tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
+
+                        <tr><td>Image</td><td><input type="file" name="img" class="btn btn-outline-secondary"></td></tr>
+                                                <tr><td>&nbsp;&nbsp;&nbsp;</td></tr>
+<strong></strong>
+                        <tr><td colspan="2" align="center"><input type="submit" name="submit" value="ADD" class="btn btn-outline-secondary"></td></tr>
+
+</table></form>
+	         
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+    
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/static/js/popper.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/jquery.easing.1.3.js"></script>
+  <script src="/static/js/jquery.waypoints.min.js"></script>
+  <script src="/static/js/jquery.stellar.min.js"></script>
+  <script src="/static/js/owl.carousel.min.js"></script>
+  <script src="/static/js/jquery.magnific-popup.min.js"></script>
+  <script src="/static/js/aos.js"></script>
+  <script src="/static/js/jquery.animateNumber.min.js"></script>
+  <script src="/static/js/bootstrap-datepicker.js"></script>
+  <script src="/static/js/jquery.timepicker.min.js"></script>
+  <script src="/static/js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="/static/js/google-map.js"></script>
+  <script src="/static/js/main.js"></script>
+    
+  </body>
+</html>
+<script type="text/javascript">
+var letters=/^[a-z A-Z]+$/;
+var numbers=/^[0-9]+$/;
+function check()
+{
+	if(!document.getElementById("t1").value.match(letters))
+	{
+		alert("please input alphabets only,enter name");
+		return false;
+	}
+	else if(!document.getElementById("t4").value.match(numbers))
+	{
+		alert("please input numbers only,enter phone number");
+		return false;
+	}
+	
+	else if(document.getElementById("t4").value.length<10)
+	{
+		alert("please input 10 digits only,enter phone number");
+		return false;
+	}
+	
+	else
+	{
+		return true;
+	}
+}
+
+</script>
+
