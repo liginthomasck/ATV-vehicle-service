@@ -1,0 +1,8 @@
+<?php
+include"DatabaseCon.php";
+$db=new DatabaseCon;
+$id=$_GET['id'];
+$q="update service set status='Completed' where sid='$id'";
+$db->updateQuery($q);
+header('location:viewservicedone.php');
+?>
