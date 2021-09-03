@@ -1,0 +1,73 @@
+{% include 'ahead.html' %}
+    <!-- END nav -->
+    
+    <div class="hero-wrap ftco-degree-bg" style="background-image: url('/static/images/c1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
+          <div class="col-lg-8 ftco-animate">
+          	<div class="text w-100 text-center mb-md-5 pb-md-5">
+           
+<h1 align="center">Manage Mechanic Details</h1>
+<table border="2" align="center" style="background-color:#FFF">
+
+    <tr><th>Serial No</th>
+    <th>Mechanic Name</th>
+    <th>Phone Number</th>
+    <th>Email</th>
+    <th>Address</th>
+	    <th>Date of Joing</th>
+			    <th>Qualification</th>
+    <th>Action</th>
+
+</tr>
+    {% for i in  list2 %}
+        <tr>
+        <td>{{i.mid}}</td>
+<td>{{i.mname}}</td>
+<td>{{i.phno}}</td>
+<td>{{i.email}}</td>
+<td>{{i.addr}}</td>
+<td>{{i.doj}}</td>
+<td>{{i.qua}}</td>
+<!--<td><a href="editmechanic.php?id={{i.mid}}">Edit</a>-->
+<td><a href="/delmech/?id={{i.mid}}">Delete</a></td>
+
+{% endfor %}
+
+</table>
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+    
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+   <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/static/js/popper.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/jquery.easing.1.3.js"></script>
+  <script src="/static/js/jquery.waypoints.min.js"></script>
+  <script src="/static/js/jquery.stellar.min.js"></script>
+  <script src="/static/js/owl.carousel.min.js"></script>
+  <script src="/static/js/jquery.magnific-popup.min.js"></script>
+  <script src="/static/js/aos.js"></script>
+  <script src="/static/js/jquery.animateNumber.min.js"></script>
+  <script src="/static/js/bootstrap-datepicker.js"></script>
+  <script src="/static/js/jquery.timepicker.min.js"></script>
+  <script src="/static/js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="/static/js/google-map.js"></script>
+  <script src="/static/js/main.js"></script>
+    
+  </body>
+</html>
