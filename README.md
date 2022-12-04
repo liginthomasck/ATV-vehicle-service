@@ -6,7 +6,7 @@ A web based application developed in Python-Django for a particular vehicle manu
 ## #Modules
 
 ### 1.Admin
--- manage mechanics
+-- manage mechanics <br/>
 -- manage registered users
 -- view services
 -- view bookings
