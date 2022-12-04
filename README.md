@@ -22,15 +22,15 @@ A web based application developed in Python-Django for a particular vehicle manu
 ### 3.Mechanics
 -- edit service status
 -- set type of services
-.
-.
+
+
 ## #Tables
--- carbook
--- login
--- mechanics
--- pay
--- service
--- servicedone
--- user
--- assign
--- vehicle
+ -- carbook
+ -- login
+ -- mechanics
+ -- pay
+ -- service
+ -- servicedone
+ -- user
+ -- assign
+ -- vehicle
