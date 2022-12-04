@@ -1,36 +1,36 @@
 # ATV
 
 A web based application developed in Python-Django for a particular vehicle manufacturing company.
-.
-.
+<br/>
+<br/>
 ## #Modules
-
+ <br/>
 ### 1.Admin
 -- manage mechanics <br/>
--- manage registered users
--- view services
--- view bookings
--- add mechanics
--- add vechicles
--- provides login credentials
-
+-- manage registered users <br/>
+-- view services <br/>
+-- view bookings <br/>
+-- add mechanics <br/>
+-- add vechicles <br/>
+-- provides login credentials <br/>
+ <br/>
 ### 2.Users
--- add service
--- book vehicles
--- view service status
-
+-- add service <br/>
+-- book vehicles <br/>
+-- view service status <br/>
+ <br/>
 ### 3.Mechanics
--- edit service status
--- set type of services
-
-
+-- edit service status <br/>
+-- set type of services <br/>
+ <br/>
+ <br/>
 ## #Tables
- -- carbook
- -- login
- -- mechanics
- -- pay
- -- service
- -- servicedone
- -- user
- -- assign
- -- vehicle
+ -- carbook <br/>
+ -- login <br/>
+ -- mechanics <br/>
+ -- pay <br/>
+ -- service <br/>
+ -- servicedone <br/>
+ -- user <br/>
+ -- assign <br/>
+ -- vehicle <br/>
