@@ -14,7 +14,8 @@ A web based application developed in Python-Django for a particular vehicle manu
 -- add vechicles <br/>
 -- provides login credentials <br/>
  <br/>
-### 2.Users <br/>
+ 
+### 2.Users
 -- add service <br/>
 -- book vehicles <br/>
 -- view service status <br/>
